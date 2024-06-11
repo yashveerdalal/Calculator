@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+.calculator form input.orange{
+    background-color: #ff6700 ; 
+     }
+.calculator form input.orange:hover{
+    background-color:  #ff9650 ;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="calculator">
+
+          <form action="">
+            <div class="display"><input style="border-radius: 0%; font-size: 2em;" id="display" value="0" type="text" readonly></div>
+            <div>
+                <input onclick="cleardisplay()" id="allclear" type="button" value="AC">
+                <input  onclick="deleteone()" type="button" value="DE" >
+                <input onclick="appendtodisplay('.')" type="button" value=".">
+                <input id="div" onclick="appendtodisplay('/')"  class="orange"  type="button" value="/">
+            </div>
+            <div>
+                <input onclick="appendtodisplay('7')" type="button" value="7" onclick="">
+                <input onclick="appendtodisplay('8')" type="button" value="8">
+                <input onclick="appendtodisplay('9')" type="button" value="9">
+                <input onclick="appendtodisplay('*')"  class="orange"  type="button" value="X">
+            </div>
+            <div>
+                <input onclick="appendtodisplay('4')" type="button" value="4">
+                <input onclick="appendtodisplay('5')" type="button" value="5">
+                <input onclick="appendtodisplay('6')" type="button" value="6">
+                <input onclick="appendtodisplay('-')"  class="orange"  type="button" value="-">
+            </div>
+            <div>
+                <input onclick="appendtodisplay('1')" type="button" value="1">
+                <input onclick="appendtodisplay('2')" type="button" value="2">
+                <input onclick="appendtodisplay('3')" type="button" value="3">
+                <input onclick="appendtodisplay('+')"   class="orange" type="button" value="+">
+            </div>
+            <div>
+                <input onclick="appendtodisplay('00')" type="button" value="00">
+                <input onclick="appendtodisplay('0')" type="button" value="0">
+                <input onclick="calculate()" style="width: 46%; border-radius: 4px;  background-color: #4bb7e5;" type="button" value="=">
+                
+            </div>
+        </form>
+</div>
+</div>
+
+    <script src="index.js"></script>
+
+    
+</body>
+</html>
